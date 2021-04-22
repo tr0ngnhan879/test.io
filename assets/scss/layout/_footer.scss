@@ -1,0 +1,120 @@
+.wrapFooter {
+    background-color: $color22;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.linkTitleFooter {
+    @extend .linkTitleBottom;
+    color: $color1;
+}
+
+.itemContentFooter {
+    @extend .titleExplainSubscribe;
+    color: $color1;
+    margin-top: 15px;
+}
+
+.titleItemFooter {
+    @extend .titleBookingNow;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.listMenuFooter {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.linkItemMenuFooter {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color1;
+    padding: 5px 0;
+    @include transition(0.5s);
+    text-transform: capitalize;
+    display: inline-block;
+    &:hover {
+        text-decoration: none;
+        color: $color23;
+    }
+}
+
+.contentItemFooter {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color1;
+}
+
+.wrapSocialFooter {
+    margin: 0 -5px;
+}
+
+.linkItemSocialFooter {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px;
+    color: $color23;
+    @include transition(0.5s);
+    &:hover,
+    &:focus {
+        color: $color1;
+        text-decoration: none;
+    }
+}
+
+.wrapTel {
+    padding-top: 12.5px;
+}
+.wrapCopyrightAndDesgined {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 19px 0;
+    color: $color22;
+    a {
+        text-decoration: none;
+        color: $color22;
+        @include transition(0.5s);
+        &:hover,
+        &:focus {
+            color: $color23;
+        }
+    }
+}
+
+@media(max-width:1023px){
+    .wrapFooter {
+        padding: 30px 0;
+    }
+    .wrapCopyrightAndDesgined{
+        padding: 4px 0;
+    }
+}
+@media(max-width:991px){
+    .wrapFooter{
+        padding: 22.5px 15px 20px;
+    }
+    .colItemFooter{
+        margin: 7.5px 0;
+    }
+    .linkItemMenuFooter {
+        padding: 2.5px 0;
+    }
+    .titleItemFooter{
+        padding-bottom: 5px;
+    }
+    .wrapTel{
+        padding-top: 5px;
+    }
+}
+
+@media(max-width:575px){
+    .colUserLink{
+        width: 50%;
+    }
+}

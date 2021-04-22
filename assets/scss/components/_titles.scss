@@ -1,0 +1,228 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+//title menu bottom
+.linkTitleBottom {
+    display: inline-block;
+    font-weight: 700;
+    color: $color22;
+    margin-left: 30px;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $color23;
+    }
+}
+
+.titleLine1 {
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.titleLine2 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+//title menu bottom
+//title Big In Image Background
+.titleBigImgMain {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+    color: $color1;
+}
+
+.titleSmallInImgMain {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    text-align: left;
+    color: $color1;
+    padding: 60px 40px;
+    width: 500px;
+    margin-left: 40px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: $color1;
+        top: 0;
+        right: 100%;
+        margin-top: 84px;
+    }
+}
+
+.titleBookingNow {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: $color1;
+    text-transform: capitalize;
+}
+
+.titleSubBookingNow,
+.titleExplainSubscribe {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color1;
+}
+
+.titleSubBookingNow {
+    text-align: center;
+}
+
+//title Big In Image Background
+//block subscripe
+.titleSubscribe {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 15px;
+    color: $color1;
+}
+
+.titleExplainSubscribe {
+    text-align: left;
+}
+
+//block subscripe
+//Hot deals
+.titleSmallDeals {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 800;
+    color: $color23;
+    margin-bottom: 15px;
+    i {
+        color: $color25;
+        margin-right: 15px;
+    }
+}
+
+.titleSubbigDeals {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 15px;
+    color: $color22;
+}
+
+.titleContentDeals {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color10;
+    margin-bottom: 15px;
+}
+
+.titleWeekDeals {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    color: $color22;
+    display: inline-block;
+    margin: 0;
+    @include transition(0.5s);
+    &:hover,
+    &:focus {
+        color: $color23;
+    }
+}
+
+.titlePriceDeals {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 800;
+    color: $color23;
+    display: inline-block;
+}
+
+//Hot deals
+//About Tour
+.titleBuyTour {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $color22;
+    margin-bottom: 15px;
+}
+
+//About Tour
+@media(max-width:1023px) {
+    .titleBigImgMain {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .titleSmallInImgMain {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 30px 30px;
+        width: 400px;
+        margin-left: 40px;
+        &::before {
+            margin-top: 50px;
+        }
+    }
+    .titleSubscribe {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media(max-width:991px) {
+    .titleBigImgMain {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .titleSmallInImgMain {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 30px 20px;
+        width: auto;
+        margin-left: 20px;
+        &::before {
+            width: 20px;
+            margin-top: 46px;
+        }
+    }
+    .titleSubbigDeals,
+    .titleSubscribe {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .titleBuyTour {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:767px) {
+    .titleBigImgMain {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .titleSmallDeals,
+    .titleSubbigDeals,
+    .titleContentDeals,
+    .titleBuyTour {
+        margin-bottom: 7.5px;
+    }
+}
+
+@media(max-width:575px) {
+    .titleBigImgMain,
+    .titleSubbigDeals {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}

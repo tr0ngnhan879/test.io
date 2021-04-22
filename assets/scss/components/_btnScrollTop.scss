@@ -1,0 +1,42 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+.btnScrollTop {
+    position: fixed;
+    right: 75px;
+    bottom: -120px;
+    display: inline-block;
+    transform: translate(0, 0);
+    padding: 15px 27.5px;
+    background-color: $color1;
+    @include borderRadius(50%);
+    @include transition(0.5s);
+    @include boxShadow($boxShadow1);
+    z-index: 2;
+    cursor: pointer;
+    i {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: $color23;
+    }
+    &:hover {
+        background-color: $color22;
+        i{
+            color: $color1;
+        }
+    }
+    &.showBtnScrollTop {
+        bottom: 15px;
+    }
+}
+
+@media(max-width:991px){
+    .btnScrollTop{
+        right: 15px;
+        padding: 7.5px 17.25px;
+        i{
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.backgroundImage{
+    background-image: url('../images/ImgMain.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+//Content in Image
+.rowItemContentInImg{
+    padding: 160px 0;
+}
+//Content in Image
+
+@media(max-width:1023px){
+    .rowItemContentInImg {
+        padding: 130px 0;
+    }
+}
+
+@media(max-width:991px){
+    .wrapitemContentInImgMain{
+        padding: 0 15px;
+    }
+}
+@media(max-width:767px){
+    .rowItemContentInImg {
+        padding: 100px 0;
+    }
+    .titleBigImgMain{
+        br{
+            display: none;
+        }
+    }
+    .titleSmallInImgMain{
+        padding: 15px;
+    }
+}
+@media(max-width:575px){
+    .rowItemContentInImg {
+        padding: 60px 0;
+    }
+}

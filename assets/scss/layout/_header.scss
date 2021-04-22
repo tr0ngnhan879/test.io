@@ -1,0 +1,351 @@
+//Menu top
+.wrapTitleMenuTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 15px;
+    background-color: $color22;
+    flex-wrap: wrap;
+}
+
+.listMenuTop {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.itemMenuTop {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.linkitemMenuTop {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color1;
+    max-width: 400px;
+    @include transition(0.5s);
+    i {
+        font-size: 12px;
+        line-height: 22px;
+        margin-left: 3px;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $color23;
+    }
+}
+
+//Menu top
+//Menu bottom
+.wrapMenuBottom {
+    background-color: $color1;
+    @include transition(0.5s);
+}
+
+.wrapMenuBottomMobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerMenuBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 19px 15px;
+    background-color: $color1;
+    width: 100%;
+    @include transition(0.5s);
+    h1 {
+        padding: 0;
+    }
+}
+
+.wrapblock1 {
+    display: flex;
+    align-items: center;
+    max-width: 33%;
+}
+
+.linkImgLogo {
+    display: inline-block;
+}
+
+.imgLogoMain {
+    display: inline-block;
+    width: auto;
+    height: 62px;
+    @include transition(0.5s);
+}
+
+.listMenuBottom {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.itemMenuBottom {
+    display: inline-block;
+    padding: 7.5px;
+}
+
+.linkitemMenuBottom {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $color22;
+    display: inline-block;
+    text-transform: uppercase;
+    @include transition(0.5s);
+    &:hover,
+    &:focus {
+        color: $color23;
+        text-decoration: none;
+    }
+}
+
+.btnRequest {
+    padding: 8px 40px;
+}
+
+.btnMenuBar {
+    display: none;
+}
+
+.collapseBackground {
+    display: none;
+}
+
+.fixedMenu {
+    .wrapMenuBottom {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background-color: $color1;
+        @include boxShadow($boxShadow2);
+    }
+    .containerMenuBottom {
+        padding: 0 30px;
+        background-color: transparent;
+    }
+    .imgLogoMain {
+        padding: 5px;
+    }
+}
+
+.wrapMenuBottomMobile {
+    position: relative;
+}
+
+.iconRequest {
+    display: none;
+}
+
+.listMobile {
+    display: none;
+}
+
+.showMenu {
+    .wrapMenuBottomMobile {
+        left: 0;
+    }
+    .wrapbtnCollapse {
+        .btnClose {
+            @include opacity(1);
+        }
+        .btnOpen {
+            @include opacity(0);
+        }
+    }
+    .collapseBackground {
+        right: 0;
+    }
+}
+
+.wrapbtnCollapse {
+    display: none;
+    .btnClose {
+        @include opacity(0);
+    }
+    .btnOpen {
+        @include opacity(1);
+    }
+}
+
+//menu bottom
+@media(max-width:1023px) {
+    .wrapTitleMenuTop {
+        padding: 10px 15px;
+    }
+}
+
+@media(max-width:991px) {
+    .wrapblock1 {
+        position: relative;
+        z-index: 2;
+    }
+    .container-xl {
+        padding: 0;
+    }
+    .linkTitleBottom,
+    .linkTitleFooter {
+        margin-left: 15px;
+    }
+    .wrapMenuBottom {
+        position: relative;
+    }
+    .containerMenuBottom {
+        padding: 5px 15px;
+    }
+    .fixedMenu {
+        .containerMenuBottom {
+            padding: 0 15px;
+        }
+    }
+    .textRequest {
+        display: none;
+    }
+    .iconRequest {
+        display: block;
+        font-size: 25px;
+        line-height: 35px;
+        padding: 7.5px 12.5px;
+        @include borderRadius(50%);
+        min-width: auto;
+        color: $color23;
+        background-color: $color1;
+        @include boxShadow($boxShadow1);
+        border: 0;
+        &:focus,
+        &:hover {
+            background-color: $color23;
+            color:$color1;
+            border: 0;
+        }
+    }
+    .wrapRequest {
+        position: fixed;
+        bottom: 75px;
+        left: 15px;
+        transform: translate(0, 0);
+        z-index: 1;
+    }
+    .wrapMenuBottomMobile {
+        display: inline-block;
+    }
+    .wrapListMenuBottom {
+        width: auto;
+    }
+}
+
+@media(max-width:767px) {
+    .linkitemMenuTop {
+        display: block;
+    }
+    .listMenuTop {
+        margin-left: -5px;
+    }
+    .linkaddressTop {
+        width: 100%;
+    }
+    .wrapMenuBottomMobile {
+        position: fixed;
+        top: 124px;
+        left: -100%;
+        width: 300px;
+        height: calc(100vh - 124px);
+        z-index: 2;
+        overflow: auto;
+        @include transition(1s);
+        justify-content: flex-end;
+        background-color: $color22;
+    }
+    .itemMenuBottom {
+        display: block;
+        padding: 7.5px 15px;
+        border-bottom: 1px solid $color30;
+    }
+    .linkitemMenuBottom {
+        color: $color1;
+        width: 100%;
+    }
+    .collapseBackground {
+        display: block;
+        position: fixed;
+        width: calc(100% - 300px);
+        height: calc(100vh - 124px);
+        top: 124px;
+        right: -100%;
+        z-index: 4;
+        background-color: $color10;
+        opacity: 0.7;
+        @include transition(1s);
+    }
+    .listMenuBottom {
+        width: 100%;
+    }
+    .wrapbtnCollapse {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        padding: 15px;
+        transform: translate(-50%, -50%);
+        @include transition(0.5s);
+        z-index: 6;
+        display: block;
+    }
+    .btnMenuBar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        line-height: 30px;
+        display: block;
+        color: $color10;
+        @include transition(0.35s);
+        &:hover,
+        &:focus {
+            i {
+                color: $color10;
+            }
+        }
+    }
+    .listDesktop {
+        display: none;
+    }
+    .listMobile {
+        display: block;
+    }
+    .fixedMenu {
+        &.wrapMenuBottomMobile,
+        &.collapseBackground {
+            top: 80px;
+            height: calc(100% - 80px);
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .wrapTitleMenuTop {
+        height: 68px;
+    }
+    .wrapMenuBottomMobile,
+    .collapseBackground {
+        top: 148px;
+        height: calc(100% - 148px);
+    }
+    .linkitemMenuTop {
+        @include splitText(2, 48px);
+    }
+    .listDesktop {
+        display: none;
+    }
+}

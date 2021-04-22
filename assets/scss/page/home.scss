@@ -1,0 +1,53 @@
+// general
+@import '../base/general';
+// end general
+
+//wrapImageMain
+@import '../layout/wrapImageMain';
+//wrapImageMain
+
+//Booking form
+@import '../components/bookingForm';
+//Booking form
+
+//subscripe
+@import '../layout/subscripeItem';
+//subscripe
+
+//hot Deals
+@import '../layout/listHotDeals';
+//hot Deals
+
+//service
+@import '../layout/wrapService';
+//service
+
+//Special Offers
+@import '../layout/wrapSpecialOffers';
+//Special Offers
+
+//slick
+@import '../vendor/slick';
+//slick
+
+//Destination
+@import '../layout/wrapDestinations';
+//Destination
+
+//About tour
+@import '../layout/wrapAboutTour';
+//About tour
+
+//TESTIMONIALS
+@import '../layout/wrapTestimonials';
+//TESTIMONIALS
+
+//Contact
+@import '../layout/wrapContact';
+//Contact
+
+//Map
+@import '../layout/wrapMap';
+//Map
+
+@import '../components/formTel';

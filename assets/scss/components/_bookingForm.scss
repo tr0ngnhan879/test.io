@@ -1,0 +1,58 @@
+.wrapInquiryNow {
+    text-align: center;
+    background-color: $color24;
+    padding: 30px;
+}
+
+.wrapTitleBookingNow {
+    padding-bottom: 15px;
+}
+
+.formBooking {
+    margin-bottom: 0;
+    .form-control {
+        font-size: 14px;
+        line-height: 20px;
+        height: 60px;
+        padding: 19px;
+        @include borderRadius(0);
+        margin-bottom: 15px;
+        border: 0;
+        &:focus {
+            @include boxShadow(none);
+            border-color: $color4;
+        }
+    }
+}
+
+
+@media(max-width:767px){
+    .wrapInquiryNow {
+        text-align: center;
+        background-color: $color24;
+        padding: 15px 15px;
+    }
+    .formBooking {
+        .form-control {
+            height: 40px;
+            padding: 10px;
+        }
+    }
+    .colInput{
+        text-align: left;
+    }
+}
+
+@media(max-width:575px){
+    .wrapInquiryNow {
+        padding-bottom: 15px;
+    }
+    .formBooking {
+        .colInput{
+            width: 100%;
+        }
+    }
+    .colInput{
+        text-align: center;
+    }
+}

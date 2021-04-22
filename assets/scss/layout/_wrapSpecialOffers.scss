@@ -1,0 +1,178 @@
+.wrapSpecialOffers {
+    padding: 120px 0;
+    background-image: url('../images/backgroundOffer.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rowSpecialOffer {
+    padding-top: 45px;
+    margin: 0 -7.5px;
+    .colSpecialOffer {
+        padding: 0 7.5px;
+    }
+}
+
+.listTabOffer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $color27;
+}
+
+.itemTabOffer {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    padding: 27px 15px;
+    width: 100%;
+    border-top: 1px solid $color31;
+    @include transition(0.5s);
+    &:first-child {
+        border: 0;
+    }
+    &:hover,
+    &:focus {
+        background-color: $color28;
+        color: $color1;
+    }
+    &.active {
+        background-color: $color28;
+        color: $color1;
+    }
+}
+
+.imgTabOffer {
+    width: 100%;
+    height: auto;
+    @include boxShadow($boxShadow2);
+    display: block;
+    margin-bottom: 60px;
+}
+
+.wrapContentTab {
+    display: none;
+    @include opacity(0);
+    visibility: hidden;
+    @include transition(1s);
+    &.active {
+        display: block;
+        @include opacity(1);
+        visibility: visible;
+    }
+    .titlePriceDeals {
+        margin-bottom: 15px;
+    }
+}
+
+.titleTourOperator {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.colExcursions {
+    margin-top: 15px;
+}
+
+.listDetail {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        position: relative;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        &::before {
+            position: absolute;
+            content: "\f0c8";
+            font-family: "Font Awesome 5 Free";
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 900;
+            color: $color28;
+            top: 0;
+            left: 0;
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.wrapGeneral {
+    background-color: $color22;
+}
+
+@media(max-width:1023px) {
+    .wrapSpecialOffers {
+        padding: 60px 0;
+    }
+    .itemTabOffer {
+        padding: 15px;
+    }
+}
+
+@media(max-width:991px) {
+    .wrapSpecialOffers {
+        padding: 60px 15px;
+    }
+    .rowSpecialOffer {
+        padding-top: 15px;
+    }
+    .imgTabOffer {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .wrapSpecialOffers {
+        padding: 30px 15px;
+    }
+    .listTabOffer {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .itemTabOffer {
+        font-size: 14px;
+        line-height: 24px;
+        border-top: 0;
+        border-left: 1px solid $color31;
+        text-align: center;
+        &:first-child {
+            border-left: 0;
+        }
+    }
+    .rowSpecialOffer {
+        padding-top: 0;
+    }
+    .itemTabOffer {
+        padding: 10px 15px;
+    }
+    .imgTabOffer {
+        margin-bottom: 15px;
+    }
+    .wrapContentTab .titlePriceDeals {
+        margin-bottom: 7.5px;
+    }
+    .listDetail{
+        li{
+            padding-bottom: 7.5px;
+        }
+    }
+    .colExcursions{
+        margin-top: 7.5px;
+    }
+}
+
+@media(max-width:575px) {
+    .listTabOffer {
+        margin-top: 7.5px;
+    }
+}

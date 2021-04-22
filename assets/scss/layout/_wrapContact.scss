@@ -1,0 +1,130 @@
+.wrapContact {
+    .titleBuyTour {
+        color: $color10;
+    }
+}
+
+.iconContact {
+    font-size: 40px;
+    line-height: 50px;
+    color: $color23;
+    padding-bottom: 15px;
+}
+
+.titleInfoContact {
+    color: $color22;
+    text-align: left;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.linkItemContact {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color22;
+    display: block;
+    @include transition(0.5s);
+    &:not(.titlePlan) {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $color23;
+        }
+    }
+}
+
+.wrapGroupContact{
+    padding-top: 15px;
+}
+.colInfoContact {
+    padding: 30px 15px;
+}
+
+.wrapLeftContact {
+    padding: 120px 0 90px;
+}
+
+.wrapFormContact {
+    background-color: $color28;
+    padding: 120px 30px;
+    height: 100%;
+}
+
+.titleSendContact {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    color: $color1;
+    padding-bottom: 15px;
+}
+
+.formContact {
+    @extend .formBooking;
+    .form-control {
+        @include borderRadius(30px);
+    }
+    textarea[name=Message] {
+        height: 120px;
+    }
+}
+
+.wrapBtnContact {
+    text-align: right;
+}
+
+.wrapGeneral {
+    .formBooking {
+        margin: 0;
+    }
+}
+
+@media(max-width:1023px) {
+    .wrapLeftContact {
+        padding: 60px 0 45px;
+    }
+    .wrapFormContact {
+        padding: 60px 15px;
+    }
+    .colInfoContact {
+        padding: 15px;
+    }
+    .wrapGroupContact{
+        padding-top: 0;
+    }
+    .rowContact{
+        margin: 0 -7.5px;
+        .col-md-6{
+            padding: 0 7.5px;
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .wrapContact {
+        padding: 0 15px;
+    }
+    .wrapFormContact{
+        padding: 60px 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .wrapLeftContact{
+        padding: 30px 0 22.5px;
+    }
+    .wrapFormContact {
+        margin: 0 -15px;
+        padding: 30px 15px;
+    }
+    .formContact{
+        margin: 0;
+    }
+    .iconContact,
+    .titleInfoContact {
+        padding-bottom: 7.5px;
+    }
+    .colInfoContact{
+        padding:7.5px 15px;
+    }
+}

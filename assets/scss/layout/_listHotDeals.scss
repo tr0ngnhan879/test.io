@@ -1,0 +1,99 @@
+.wrapHotDeals {
+    padding: 120px 0 90px;
+}
+
+.wraptitleHotDeals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.wrapBtnMoreDeals {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.rowlistHotDeals {
+    padding-top: 15px;
+}
+
+.colHotDeals {
+    padding: 30px 15px;
+}
+
+.wrapWeekDeals {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.wrapImageDeals {
+    display: block;
+    @include transition(0.5s);
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
+}
+
+.titleContentWeekDeals {
+    @include splitText(3, 72px);
+}
+
+.linkTitleWeekDeals {
+    @include splitText(2, 48px);
+}
+
+@media(max-width:1023px) {
+    .wrapHotDeals {
+        padding: 60px 0 30px;
+    }
+}
+
+@media(max-width:991px) {
+    .wrapHotDeals {
+        padding: 60px 15px 45px;
+    }
+    .rowlistHotDeals {
+        padding-top: 0;
+        margin: 0 -7.5px;
+    }
+    .colHotDeals {
+        padding: 15px 7.5px;
+    }
+}
+
+@media(max-width:767px) {
+    .wrapHotDeals {
+        padding: 30px 15px 22.5px;
+    }
+    .colHotDeals {
+        padding: 7.5px;
+    }
+    .wrapWeekDeals,
+    .wraptitleHotDeals {
+        margin-bottom: 7.5px;
+    }
+    .wrapBtnMoreDeals{
+        margin-top: 7.5px;
+    }
+}
+
+@media(max-width:575px) {
+    .wrapHotDeals {
+        padding: 30px 0 22.5px;
+    }
+    .containerHotDeals {
+        padding: 0 15px;
+    }
+    .titleContentWeekDeals {
+        margin-top: 0;
+    }
+    .wrapBtnMoreDeals {
+        margin-top: 7.5px;
+    }
+    .colHotDeals {
+        padding: 7.5px;
+    }
+}

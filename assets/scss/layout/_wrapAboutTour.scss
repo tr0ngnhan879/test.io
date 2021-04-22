@@ -1,0 +1,159 @@
+.wrapAboutTour {
+    background-image: url('../images/backgroundAboutTour.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.imgAboutTour {
+    width: 100%;
+    height: auto;
+}
+
+.wrapHourMinute {
+    display: block;
+    padding: 15px 0;
+}
+
+.wrapCircle {
+    background-color: $color22;
+    display: inline-block;
+    padding: 26px 25px;
+    @include borderRadius(50%);
+}
+
+.countDay,
+.countHour,
+.countMinute,
+.countSecond {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    color: $color1;
+    width: 40px;
+    text-align: center;
+}
+
+.countDetermine {
+    font-size: 35px;
+    color: $color22;
+    padding: 5px;
+}
+
+.wrapBtnAboutTour {
+    padding-top: 45px;
+    text-align: center;
+    a {
+        margin: 0 15px;
+    }
+}
+
+.btnWatchVideo {
+    i {
+        margin-left: 10px;
+    }
+}
+
+.wrapImgAboutTour {
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+}
+
+.wrapContentAboutTour {
+    float: right;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.wrapClockAndBtn {
+    text-align: center;
+}
+
+@media(max-width:1199px) {
+    .wrapContentAboutTour{
+        padding-left: 15px;
+    }
+    .wrapImgAboutTour {
+        padding-right: 15px;
+    }
+
+}
+
+@media(max-width:1023px) {
+    .wrapAboutTour {
+        padding: 60px 0;
+    }
+    .wrapBtnAboutTour {
+        padding-top: 15px;
+    }
+}
+
+@media(max-width:991px) {
+    .wrapAboutTour {
+        padding: 60px 15px;
+    }
+    .wrapImgAboutTour {
+        margin-bottom: 15px;
+    }
+    .countDetermine {
+        padding: 0;
+    }
+    .wrapHourMinute{
+        padding-top: 0;
+    }
+    .wrapCircle {
+        padding: 16px 15px;
+    }
+    .wrapBtnAboutTour {
+        text-align: center;
+        a{
+            margin: 0 7.5px;
+        }
+    }
+    .wrapImgAboutTour {
+        margin-right: 0;
+    }
+
+    .wrapContentAboutTour{
+        padding-left: 0;
+    }
+}
+
+@media(max-width:767px) {
+    .wrapImgAboutTour,
+    .wrapContentAboutTour {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .wrapAboutTour{
+        padding: 30px 15px;
+    }
+    .wrapHourMinute{
+        padding: 7.5px 0;
+    }
+    .wrapBtnAboutTour{
+        padding-top: 7.5px;
+    }
+}
+
+@media(max-width:575px) {
+    .titleBuyTour {
+        text-align: center;
+    }
+    .wrapHourMinute {
+        text-align: center;
+    }
+    .wrapBtnAboutTour {
+        a{
+            margin: 0;
+        }
+    }
+    .wrapCircle {
+        padding: 10px 9px;
+    }
+}

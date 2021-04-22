@@ -1,0 +1,67 @@
+@import "../abstracts/variable";
+@import "../abstracts/mixin";
+
+.wrapHidden {
+  overflow: hidden!important;
+}
+
+body {
+  @include transition(0.5s);
+  @include opacity(0);
+  overflow: hidden;
+  // background-color: $color8;
+  width: 100%;
+  height: 100%;
+  &.showContent {
+    overflow: unset;
+    overflow: none;
+    @include opacity(1);
+  }
+}
+
+.hide{
+  visibility: hidden;
+  @include opacity(0);
+}
+
+*{
+  box-sizing: border-box;
+  outline: 0;
+}
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 10px;
+//   background-color: $color8;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 3px $color5;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: $color2;
+//   &:hover {
+//     background: $color4;
+//   }
+// }
+
+// @media(max-width:991px){
+//   ::-webkit-scrollbar {
+//     width: 5px;
+//   }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 2px $color5;
+//   }
+  
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: $color2;
+//     &:hover {
+//       background: $color3;
+//     }
+//   }
+// }
